@@ -10,21 +10,15 @@ body {
     margin: 0;
 }
 
-header #pagina{
-    margin: 10em;
-    font-size: 2em;
-    color: red;
-}
 
-h1 {font-size: 3.5em;}
-h2 {font-size: 2.7em;}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 2em;}
 h3 {font-size: 2em;}
 p  {font-size: 1.25em;}
-ul {list-style: none;}
-li {font-size:1.25em;}
 
 button {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
@@ -35,40 +29,31 @@ button {
 }
 
 button:hover {
-    background-color: rgb(252, 45, 30);
+    background-color: rgb(197, 20, 8);
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
 }
 
 .color-acento { color: rgb(252, 45, 30);}
 
 header {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
 
-}
-
-header .logo {
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: rgb(78, 149, 167);
-    font-size: 1.6em;
 }
 
 header .container {
     display: flex;
-    flex-direction:row  ;
+    flex-direction:column  ;
     align-items: center;
 }
 
-header nav {
+header menu {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     text-align: center;
-    padding-bottom: 25px;
 }
 
 header a {
@@ -79,7 +64,7 @@ header a {
 }
 
 header a:hover {
-    color: rgb(72, 150, 163);
+    color: rgb(241, 42, 42);
 }
 
 #hero {
@@ -95,7 +80,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../img/header.jpeg");
+    ,url("../img/ufpso.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -105,43 +90,44 @@ header a:hover {
     color: white;
 }
 
-#hero-button {
-    font-size: 1.75em;
-}
-
-#somos-maxitronix .container {
+#somos-UFPSO .container {
     text-align: center;
-    padding: 200px 12px;
 }
 
-#nuestros-productos {
-    background-color: rgb(30, 30, 30);
+#nuestras-carreras {
+    background-color: rgb(241, 41, 41);
     color: white;
     text-align: center;
 }
 
-#nuestros-productos .container {
-    padding: 150px 12px;
+#nuestras-carreras .container {
+    padding: 80px 8px;
+    display: flex;
+    flex-direction:row;
 }
 
-#nuestros-productos h2 {
-    margin-top: 0;
-    font-size: 3.2em;
+#nuestras-carreras h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-#nuestros-productos p {
-    display: none;
+#nuestras-carreras .carreras{
+    display: flex;
 }
 
-#nuestros-productos .carta {
+#nuestras-carreras p {
+    display:contents;
+}
+
+#nuestras-carreras .carrera {
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     padding: 30px;
     margin: 20px;
     border-radius: 17px;
 }
 
-.carta:first-child {
+.carrera:first-child {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -150,7 +136,7 @@ header a:hover {
      ,url("../img/precio-bajo.jpeg");
 }
 
-.carta:nth-child(2) {
+.carrera:nth-child(2) {
     background-image:  linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -159,23 +145,14 @@ header a:hover {
     ,url("../img/calidad-precio.jpg");
 }
 
-#caracteristicas .container{
-text-align: center;
-padding: 250px 12px;
-}
-
-#caracteristicas li {
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
 #te-esperamos {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(240, 24, 24);
     color: white;
     height: 45vh;
 }
@@ -185,7 +162,7 @@ padding: 250px 12px;
 }
 
 #te-esperamos button {
-    font-size: 3vw;
+    font-size: 1vw;
 }
 
 footer {
