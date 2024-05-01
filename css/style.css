@@ -10,34 +10,30 @@ body {
     margin: 0;
 }
 
-
-
 h1 {font-size: 2.5em;}
 h2 {font-size: 2em;}
 h3 {font-size: 2em;}
 p  {font-size: 1.25em;}
 
-button {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 2px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: rgb(252, 45, 30);
-}
-
-button:hover {
-    background-color: rgb(197, 20, 8);
-}
-
+.boton {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el espacio interno del botón */
+    background-color: rgb(252, 45, 30); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border: none; /* Elimina el borde */
+    border-radius: 6px; /* Redondea las esquinas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+  
+  .boton:hover {
+    background-color: rgb(201, 19, 6); /* Cambia el color de fondo al pasar el ratón */
+  }
+  
 .container {
     max-width: 100%;
     margin: auto;
 }
-
-.color-acento { color: rgb(252, 45, 30);}
 
 header {
     background-color: rgb(255, 255, 255);
@@ -47,7 +43,7 @@ header {
 header .container {
     display: flex;
     flex-direction:column  ;
-    align-items: center;
+    align-items: baseline;
 }
 
 header menu {
@@ -92,39 +88,53 @@ header a:hover {
 
 #somos-UFPSO .container {
     text-align: center;
+    width: 90%; 
+    height: 200px; 
+    padding: 10px; 
+}
+
+#somos-UFPSO span {
+    color: red;
 }
 
 #nuestras-carreras {
-    background-color: rgb(241, 41, 41);
+    background-color: rgb(236, 45, 45);
     color: white;
     text-align: center;
 }
 
-#nuestras-carreras .container {
-    padding: 80px 8px;
-    display: flex;
-    flex-direction:row;
-}
-
 #nuestras-carreras h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    padding-top: 20px;
 }
 
-#nuestras-carreras .carreras{
+#nuestras-carreras h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+#nuestras-carreras p{
+    justify-content: center;
+
+}
+
+#nuestras-carreras .container{
     display: flex;
-}
-
-#nuestras-carreras p {
-    display:contents;
 }
 
 #nuestras-carreras .carrera {
     background-position: center center;
-    background-size: contain;
-    padding: 30px;
-    margin: 20px;
+    background-size:cover;
+    margin: 25px 10px;
     border-radius: 17px;
+    padding: 8px;
+    width: 300px; 
+    height: 220px; 
+    
+}
+
+#nuestras-carreras p {
+    display:contents;
+    display: flex;
 }
 
 .carrera:first-child {
@@ -133,37 +143,52 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-     ,url("../img/precio-bajo.jpeg");
+    , url("../img/sistemas.jpg");
+    background-repeat: no-repeat;
 }
 
 .carrera:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/derecho.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+.carrera:nth-child(3) {
     background-image:  linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../img/calidad-precio.jpg");
+    ,url("../img/comunicacion.jpg");
 }
 
-#te-esperamos {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(240, 24, 24);
-    color: white;
-    height: 45vh;
+.carrera:nth-child(4) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/zootecnia.jpg");
 }
 
-#te-esperamos {
-    font-size: 1vw;
-}
+#redes_sociales {
+    display:flex;
+    justify-content:center;
+   
+  }
 
-#te-esperamos button {
-    font-size: 1vw;
-}
+  #redes_sociales a {
+    display:block;
+    justify-content:space-between;
+    margin:3% 1%;
+    color: rgb(255, 2, 2);
+  }
 
 footer {
     background-color: rgb(230, 230, 230);
@@ -176,7 +201,7 @@ footer p {
 }
 
 footer .container {
-height: 100px;
+height: 45px;
 display: flex;
 justify-content: center;
 align-items: flex-end;
