@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Ing. en Sistemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="../css/estiloing.css">
+</head>
+<body>
+    <header>
+        <h1>Ingeniería de Sistemas</h1>
+    </header>
+
+    <p> La carrera de ingenieria de sistemas actualmente acreditada tiene un total de <strong>10 semestres (5 años)</strong>
+        teniendo un nivel de formación en <strong>Profecional universitario</strong>,donde se obteniene el titulo como 
+        <strong>Ingeniero de sistemas</strong> teniendo sus clases en la modalidad <strong>Presencial Diurna</strong> 
+        el encargado es el director del plan de estudio <strong>Mgrt. Eduar Bayona Ibañez</strong>
+        
+    </p>
+    <main>
+        <section id="materias">
+            <h2>Semestres</h2>
+            <div id="materias-slider">
+                <!-- Slider de materias -->
+                <div>Semestre 1</div>
+                <div>Semestre 2</div>
+                <div>Semestre 3</div>
+                <div>Semestre 4</div>
+                <div>Semestre 5</div>
+                <div>Semestre 6</div>
+                <div>Semestre 7</div>
+                <div>Semestre 8</div>
+                <div>Semestre 9</div>
+                <div>Semestre 10</div>
+                <!-- Agrega más divs con las materias -->
+            </div>
+        </section>
+    </main>
+        <section id="btns">
+
+        <section id="retos">
+            <a href="../html/retos.html">
+            <button >RETOS</button>
+            </a>
+        </section>
+        <section id="malla">
+            <a href="../html/malla.html">
+                <button>Malla Curricular</button>
+            </a>
+        </section>
+
+        </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#materias-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>

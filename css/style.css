@@ -15,6 +15,22 @@ h2 {font-size: 2em;}
 h3 {font-size: 2em;}
 p  {font-size: 1.25em;}
 
+.botons {
+    padding-top: 20px;
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el espacio interno del botón */
+    background-color: rgb(252, 45, 30); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border: none; /* Elimina el borde */
+    border-radius: 6px; /* Redondea las esquinas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+
+  .botons:hover {
+    background-color:  rgb(201, 19, 6);
+  }
+
 .boton {
     display: inline-block;
     padding: 10px 20px; /* Ajusta el espacio interno del botón */
@@ -33,34 +49,6 @@ p  {font-size: 1.25em;}
 .container {
     max-width: 100%;
     margin: auto;
-}
-
-header {
-    background-color: rgb(255, 255, 255);
-
-}
-
-header .container {
-    display: flex;
-    flex-direction:column  ;
-    align-items: baseline;
-}
-
-header menu {
-    display: flex;
-    flex-direction:row;
-    text-align: center;
-}
-
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover {
-    color: rgb(241, 42, 42);
 }
 
 #hero {
@@ -91,53 +79,52 @@ header a:hover {
     width: 90%; 
     height: 200px; 
     padding: 10px; 
+    margin: 30px;
 }
 
 #somos-UFPSO span {
     color: red;
 }
 
-#nuestras-carreras {
+#nuestras-facultades {
     background-color: rgb(236, 45, 45);
     color: white;
     text-align: center;
 }
 
-#nuestras-carreras h2 {
-    font-size: 2em;
-    padding-top: 20px;
-}
-
-#nuestras-carreras h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-#nuestras-carreras p{
+#nuestras-facultades p{
     justify-content: center;
+    font-size: 1.5em;
 
 }
 
-#nuestras-carreras .container{
+#nuestras-facultades .botons{
+    margin-top: 25px;
+}
+
+#nuestras-facultades .container{
     display: flex;
+    padding: 30px;
 }
 
-#nuestras-carreras .carrera {
+#nuestras-facultades .facultad {
     background-position: center center;
     background-size:cover;
     margin: 25px 10px;
     border-radius: 17px;
-    padding: 8px;
+    padding: 5px;
     width: 300px; 
-    height: 220px; 
+    height: 220px;    
+}
+
+#nuestras-facultades p {
+    display:contents;
+    display: flex;
+    padding-top: 50px;
     
 }
 
-#nuestras-carreras p {
-    display:contents;
-    display: flex;
-}
-
-.carrera:first-child {
+.facultad:first-child {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -147,7 +134,7 @@ header a:hover {
     background-repeat: no-repeat;
 }
 
-.carrera:nth-child(2) {
+.facultad:nth-child(2) {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -159,16 +146,16 @@ header a:hover {
 }
 
 
-.carrera:nth-child(3) {
+.facultad:nth-child(3) {
     background-image:  linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../img/comunicacion.jpg");
+    ,url("../img/contaduria.jpg");
 }
 
-.carrera:nth-child(4) {
+.facultad:nth-child(4) {
     background-image:  linear-gradient(
         0deg,
         rgba(0,0,0,0.5),

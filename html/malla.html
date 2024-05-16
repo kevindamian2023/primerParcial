@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular</title>
+  <link rel="stylesheet" href="../css/estilomalla.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Malla Curricular Ingeniería de sistemas</h1>
+
+    <div class="controls">
+
+      <select id="semester-select" onchange="filterBySemester()">
+        <option value="0">Mostrar Todas</option>
+        <option value="1">Semestre 1</option>
+        <option value="2">Semestre 2</option>
+        <option value="3">Semestre 3</option>
+        <option value="4">Semestre 4</option>
+        <option value="5">Semestre 5</option>
+        <option value="6">Semestre 6</option>
+        <option value="7">Semestre 7</option>
+        <option value="8">Semestre 8</option>
+        <option value="9">Semestre 9</option>
+        <option value="10">Semestre 10</option>
+      </select>
+
+    </div>
+
+    <div id="subjects-container" class="subjects">
+      <!-- Aquí se mostrarán las materias -->
+    </div>
+    
+  </div>
+
+  <script src="../js/malla.js"></script>
+</body>
+</html>
+
+

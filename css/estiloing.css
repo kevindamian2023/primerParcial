@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+
+    
+}
+
+header {
+    background-color: #E2001A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    padding:5px 10px;
+}
+
+main {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 97%;
+    background: url('../img/ufpso.png') no-repeat center center fixed; 
+    background-size: cover; 
+    
+}
+
+section {
+    margin: 0 10px;
+}
+
+section h2 {
+    color: #E2001A;
+    padding: 0 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+#btns {
+    display: flex;
+}
+
+section button{
+    margin-top: 35px;
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    background-color: #E2001A; 
+    color: white;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+section button:hover{
+    color:  #fff;
+    background-color: #ad0c0c;
+}
+
+/* Estilos para el slider */
+#materias-slider {
+    width: 100%;
+}
+
+#materias-slider div {
+    background-color: #f4f4f4;
+    border: 1px solid #E2001A;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Estilos para los botones del slider */
+.slick-prev, .slick-next {
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 36px;
+    text-align: center;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
+}

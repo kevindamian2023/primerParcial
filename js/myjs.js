@@ -1,4 +1,4 @@
-// Mostrar contraseña
+/*/ Mostrar contraseña
 const mostrarClave=document.querySelectorAll('.mostrarClave');
 const inputPass=document.querySelectorAll('.clave');
 
@@ -81,12 +81,15 @@ if(document.getElementById('btnLogin')){
         //enviamos el fromulario
         formLogin.submit();
         return true;
+        
+        // Redirigir a la subpágina después de enviar el formulario
+        window.location.href = "../html/retos.html";
 
     })
 }
 
-/* CREAMOS FUNCIONES PARA MOSTRAR ERROR EN PANTALLA Y ADEMAS VALIDAR SI LOS CAMPOS SON INGRESADOS CORECTAMENTE
-Mostrar Error*/
+// CREAMOS FUNCIONES PARA MOSTRAR ERROR EN PANTALLA Y ADEMAS VALIDAR SI LOS CAMPOS SON INGRESADOS CORECTAMENTE
+//Mostrar Error
 
 function mostrarError(mensaje,msError){
 
@@ -149,5 +152,4 @@ function validarSoloNumeros(valor){
         return false;
     }
     return true;
-}
-
+}*/
