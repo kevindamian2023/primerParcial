@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stiloform.css">
+  <title>derecho</title>
+</head>
+<body>
+
+  <div >
+    <h2>Seleccione su tipo de usuario:</h2>
+
+    <button onclick="irA('estudiante')">Estudiante</button>
+    <button onclick="irA('docente')">Docente</button>
+    <button onclick="irA('directivo')">Directivo</button>
+  </div>
+  
+<script>
+  function irA(tipo) {
+    var url;
+    if (tipo === 'estudiante') {
+      url = 'derecho.html';
+    } else if (tipo === 'docente') {
+      url = 'docente.html';
+    } else if (tipo === 'directivo') {
+      url = 'directivo.html';
+    }
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>

@@ -1,46 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: lightblue; 
-      
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  
-.controls {
-    margin-bottom: 20px;
-  }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 h1 {
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-select {
-    padding: 5px;
-    background-color: aqua;
-    border-radius: 5px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
 }
-  
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.color-cb {
+  background-color: #0c1f3f;
+}
+
+.color-cbi {
+  background-color: #365f7a;
+}
+
+.color-fp {
+  background-color: #00749e;
+}
+
+.color-fc {
+  background-color: #009ac7;
+}
+
+.color-ffp {
+  background-color: #007a7a;
+}
+
+.color-ffc {
+  background-color: #00b3b3;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls select, .controls button {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #888585;
+}
+
 .subjects {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.semester-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.semester-column h2 {
+  text-align: center;
+}
+
 .subject {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: lightcoral; /* Color rosado */
-    cursor: pointer;
-  }
-  
-.passed {
-    background-color: lightgreen !important; /* Color verde */
-  }
-  
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.subject.passed {
+  background-color: #d3d3d3;
+  color: #ff0000;
+}
+
+.subject.highlight {
+  border: 2px solid #ff0000;
+}
+
+button.active {
+  background-color: #9e0000;
+  color: #fff;
+}
+.prerequisite {
+  color: #ff0000; 
+  font-weight: bold;
+}
+

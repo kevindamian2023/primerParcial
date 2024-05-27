@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header, section {
+    margin-bottom: 20px;
+}
+h1, h2 {
+    color: #E2001A;
+}
+.resource-list {
+    list-style-type: none;
+    padding: 0;
+}
+.resource-list li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.professor-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.professor-card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33% - 20px); /* Ajusta este valor según el número de columnas deseado */
+    box-sizing: border-box;
+}
+.professor-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+}
+.professor-card h3 {
+    margin: 0;
+    color: #E2001A;
+    text-align: center;
+}
+.professor-card p {
+    margin: 5px 0;
+    text-align: center;
+}

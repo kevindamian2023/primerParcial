@@ -7,12 +7,40 @@
   <link rel="stylesheet" href="../css/estilomalla.css">
 </head>
 <body>
-
   <div class="container">
-    <h1>Malla Curricular Ingeniería de sistemas</h1>
+    <h1>Malla Curricular Ingeniería de Sistemas</h1>
+
+    <table>
+      <tr>
+        <th colspan="2">Área de formación</th>
+      </tr>
+      <tr>
+        <td>Ciencias Básicas</td>
+        <td class="color-cb">CB</td>
+      </tr>
+      <tr>
+        <td>Ciencias Básicas de Ingeniería</td>
+        <td class="color-cbi">CBI</td>
+      </tr>
+      <tr>
+        <td>Formación Profesional</td>
+        <td class="color-fp">FP</td>
+      </tr>
+      <tr>
+        <td>Formación Complementaria</td>
+        <td class="color-fc">FC</td>
+      </tr>
+      <tr>
+        <td>Flexibilidad Formación Profesional</td>
+        <td class="color-ffp">FFP</td>
+      </tr>
+      <tr>
+        <td>Flexibilidad Formación Complementaria</td>
+        <td class="color-ffc">FFC</td>
+      </tr>
+    </table>
 
     <div class="controls">
-
       <select id="semester-select" onchange="filterBySemester()">
         <option value="0">Mostrar Todas</option>
         <option value="1">Semestre 1</option>
@@ -26,17 +54,15 @@
         <option value="9">Semestre 9</option>
         <option value="10">Semestre 10</option>
       </select>
-
+      <button id="prerequisites-btn" onclick="toggleViewPrerequisites()">Ver Prerrequisitos</button>
+      <button id="mark-btn" onclick="toggleMarkSubjects()">Marcar Materias Vistas</button>
     </div>
 
     <div id="subjects-container" class="subjects">
-      <!-- Aquí se mostrarán las materias -->
+
     </div>
-    
   </div>
 
   <script src="../js/malla.js"></script>
 </body>
 </html>
-
-
